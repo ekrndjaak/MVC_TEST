@@ -20,8 +20,6 @@ public class SupportRepository {
     public List<Support> findAll(){
         List<Support> list = em.createQuery("SELECT n FROM Support n", Support.class)
                 .getResultList();
-
         return list;
     }
-
 }

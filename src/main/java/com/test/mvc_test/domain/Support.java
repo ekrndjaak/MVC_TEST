@@ -11,7 +11,5 @@ public class Support {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int BusinessNumber;
     private String businessName;
-
-
 }
 

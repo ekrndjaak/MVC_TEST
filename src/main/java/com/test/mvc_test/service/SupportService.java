@@ -2,12 +2,11 @@ package com.test.mvc_test.service;
 
 import com.test.mvc_test.domain.Support;
 import com.test.mvc_test.repository.SupportRepository;
-import lombok.RequiredArgsConstructor;
 
 import java.util.*;
 
-@org.springframework.stereotype.Service
-public class Service {
+
+public class SupportService {
 
     private final SupportRepository repository;
 
@@ -15,7 +14,7 @@ public class Service {
         return repository.findAll();
     }
 
-    public Service(SupportRepository repository){
+    public SupportService(SupportRepository repository){
         this.repository = repository;
     }
 }
